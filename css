@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .logo h2 {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .menu a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #888;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .menu a i {
+    margin-right: 10px;
+  }
+  
+  .menu a:hover {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .menu a.active {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .greeting h1 {
+    font-size: 24px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .cards-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+  }
+  
+  .add-card {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .small-graph {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .transactions, .history-section {
+    margin-top: 20px;
+  }
+  
+  .transactions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transactions ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .transactions ul li i {
+    margin-right: 10px;
+  }
+  
+  .amount {
+    font-weight: bold;
+  }
+  
+  .date {
+    margin-left: 10px;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  /* History Section Styles */
+  .history-section {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px 0;
+  }
+  
+  .history-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .history-header h2 {
+      font-size: 24px;
+      color: #000;
+      margin: 0;
+  }
+  
+  .history-header .see-all {
+      color: #6c6c6c;
+      font-size: 14px;
+      text-decoration: none;
+  }
+  
+  .history-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+  }
+  
+  .history-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .history-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+  }
+  
+  .history-details {
+      flex: 1;
+      margin-left: 15px;
+  }
+  
+  .history-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+      margin: 0;
+  }
+  
+  .history-date {
+      font-size: 12px;
+      color: #999;
+      margin: 5px 0 0;
+  }
+  
+  .history-amount {
+      font-size: 16px;
+      color: #000;
+      font-weight: bold;
+  }
+  
