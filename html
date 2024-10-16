@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>Noobie</h2>
+      </div>
+      <nav class="menu">
+        <a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-chart-line"></i> Statistics</a>
+        <a href="#"><i class="fas fa-wallet"></i> My Wallet</a>
+        <a href="#"><i class="fas fa-exchange-alt"></i> Transfers</a>
+        <a href="#"><i class="fas fa-envelope"></i> Message</a>
+        <a href="#"><i class="fas fa-heart"></i> Favorite</a>
+        <a href="#"><i class="fas fa-user"></i> Profile</a>
+        <a href="#"><i class="fas fa-question-circle"></i> Support</a>
+        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+      </nav>
+    </aside>
+
+    
+    <main class="main-content">
+      
+      <header class="header">
+        <div class="greeting">
+          <h1>Hello, Ahmad 👋</h1>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="profile">
+          <img src="Dashboard Website/WhatsApp Image 2024-10-03 at 15.05.18.jpeg" alt="Profile Picture">
+        </div>
+      </header>
+
+     
+      <section class="cards-section">
+        <div class="card">
+          <div class="card-info">
+            <h3>Visa</h3>
+            <p>1230 4670 4670 1230</p>
+          </div>
+          <span>05/25</span>
+        </div>
+        <div class="card">
+          <div class="card-info">
+            <h3>Card 2</h3>
+            <p>4670 4670 1230 5678</p>
+          </div>
+          <span>05/27</span>
+        </div>
+        <button class="add-card">Add New</button>
+        <div class="small-graph">
+          <canvas id="myChart"></canvas>
+        </div>
+      </section>
+
+    
+      <section class="transactions">
+        <h2>Transactions</h2>
+        <ul>
+          <li><i class="fas fa-video"></i> Wedding video <span class="date">Apr 06, 2021</span> <span class="amount">$3,000</span></li>
+          <li><i class="fas fa-passport"></i> Passport Verification <span class="date">Apr 02, 2021</span> <span class="amount">$100</span></li>
+          <li><i class="fas fa-camera"></i> RK's Photography <span class="date">Mar 28, 2021</span> <span class="amount">$470</span></li>
+          <li><i class="fas fa-shopping-cart"></i> Grocery Shop <span class="date">Mar 24, 2021</span> <span class="amount">$186</span></li>
+          <li><i class="fas fa-plane"></i> Flight Ticket <span class="date">Mar 21, 2021</span> <span class="amount">$860</span></li>
+        </ul>
+      </section>
+
+   
+      <section class="history-section">
+        <div class="history-header">
+            <h2>History</h2>
+            <a href="#" class="see-all">See all</a>
+        </div>
+        <ul class="history-list">
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="history-icon">
+                <div class="history-details">
+                    <p class="history-title">LinkedIn Pro</p>
+                    <p class="history-date">10 Mar 2021</p>
+                </div>
+                <p class="history-amount">-260.80</p>
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma" class="history-icon">
+                <div class="history-details">
+                    <p class="history-title">Figma plan</p>
+                    <p class="history-date">09 Mar 2021</p>
+                </div>
+                <p class="history-amount">-126.50</p>
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="history-icon">
+                <div class="history-details">
+                    <p class="history-title">Instagram ads</p>
+                    <p class="history-date">08 Mar 2021</p>
+                </div>
+                <p class="history-amount">-108.40</p>
+            </li>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968709.png" alt="Dribbble" class="history-icon">
+                <div class="history-details">
+                    <p class="history-title">Dribbble Pro</p>
+                    <p class="history-date">08 Mar 2021</p>
+                </div>
+                <p class="history-amount">-108.40</p>
+            </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
